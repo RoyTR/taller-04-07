@@ -138,6 +138,7 @@ posicion_mayor_merma = lista_mermas.index(mayor_merma)
 print("\n--------------- INDICADORES ----------------")
 print("Productos registrados:", cantidad_productos)
 print("Productos que requieren reposición:", productos_reposicion)
+print("Productos que requieren reposición:", [lista_nombres[i] for i in range(cantidad_productos) if lista_estados[i] == "REQUIERE REPOSICIÓN"])
 print("Productos con stock suficiente:",
       cantidad_productos - productos_reposicion)
 print("Total de unidades vendidas:", total_ventas)
